@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.baeldung</groupId>
+	<groupId>pl.jaceksysiak</groupId>
 	<artifactId>spring-security-login-and-registration-1</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 
@@ -81,7 +81,11 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgresql.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
@@ -209,6 +213,7 @@
 
 		<javax.servlet.jsp-api.version>2.3.2-b01</javax.servlet.jsp-api.version>
         <javax.el.version>2.2</javax.el.version>
+        <postgresql.version>42.2.4</postgresql.version>
 		<jstl.version>1.2</jstl.version>
 		<guava.version>20.0</guava.version>
 		<passay.version>1.0</passay.version>
